@@ -21,7 +21,7 @@ def is_token_valid(access_token): #Check if acess token is expired or not
     url = f"https://www.googleapis.com/oauth2/v1/tokeninfo?access_token={access_token}"
     try:
         response = requests.get(url)
-        return response.status_code == 200
+        return response.status_code == 200 and response.json()['expires_in'] > 10
     except requests.RequestException as e:
         print(f"Error occurred during token status check: {e}")
         return False
