@@ -27,7 +27,6 @@ def is_token_valid(access_token): #Check if acess token is expired or not
         return False
     
 def get_new_access_token(refresh_token, client_id, client_secret): #Obtain new Access Token from refresh_token
-    global EXPIRES_IN
     token_url = 'https://www.googleapis.com/oauth2/v4/token'
     payload = {
         'refresh_token': refresh_token,

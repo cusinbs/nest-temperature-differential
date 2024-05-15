@@ -9,6 +9,7 @@ To automate the management of the temperature differential and optimize the HVAC
 ## Setup
 To use this script, you'll need to set up access to the Nest Thermostat API. Follow the steps outlined in [this guide](https://developers.google.com/nest/device-access/get-started) to authenticate your application and obtain the necessary credentials.
 
+I also found [this guide](https://geoffhudik.com/tech/2023/03/04/trying-google-nest-api-with-postman-and-python/) very helpful to setup the authorization 
 ## How to Run
 1. Clone this repository to your local machine. This repo has a `data.json` file with the following format:
     ```json
